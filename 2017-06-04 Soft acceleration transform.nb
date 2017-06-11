@@ -1,0 +1,146 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4481,        138]
+NotebookOptionsPosition[      3517,        108]
+NotebookOutlinePosition[      3860,        123]
+CellTagsIndexPosition[      3817,        120]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "r_", "]"}], ":=", 
+  RowBox[{"1", "-", 
+   RowBox[{"Exp", "[", 
+    RowBox[{"-", 
+     FractionBox["r", "d"]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.701870462643478*^9, 3.7018704834583235`*^9}, {
+  3.70187084497292*^9, 
+  3.7018708451291475`*^9}},ExpressionUUID->"dd664794-2eea-47b4-8044-\
+3afcd76a8de7"],
+
+Cell["\<\
+From Mathematica\[CloseCurlyQuote]s definition of FourierSinTransform, we \
+need the following\
+\>", "Text",
+ CellChangeTimes->{{3.705575532385898*^9, 
+  3.7055755532668595`*^9}},ExpressionUUID->"b1ba0dc2-26f0-469d-b384-\
+f5027b7662ae"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Assuming", "[", 
+  RowBox[{
+   RowBox[{"d", ">", "0"}], ",", 
+   RowBox[{
+    FractionBox["1", "2"], "*", 
+    RowBox[{"FourierSinTransform", "[", 
+     RowBox[{
+      RowBox[{"f", "[", "r", "]"}], ",", "r", ",", "k", ",", 
+      RowBox[{"FourierParameters", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}]}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7018705963473415`*^9, 3.701870603425314*^9}, {
+   3.7018706702827654`*^9, 3.7018706710953293`*^9}, {3.701870887817824*^9, 
+   3.7018708900968094`*^9}, {3.7018714484181004`*^9, 3.701871448611673*^9}, 
+   3.7018715921753616`*^9, {3.70187275784735*^9, 
+   3.701872761441874*^9}},ExpressionUUID->"87810691-6518-4545-b1b2-\
+74931cfaf546"],
+
+Cell[BoxData[
+ FractionBox["1", 
+  RowBox[{"k", "+", 
+   RowBox[{
+    SuperscriptBox["d", "2"], " ", 
+    SuperscriptBox["k", "3"]}]}]]], "Output",
+ CellChangeTimes->{
+  3.7018708210949445`*^9, 3.7018708750961585`*^9, 3.70187091620677*^9, 
+   3.701871449909091*^9, 3.7018715928314753`*^9, 3.7018727623479786`*^9, {
+   3.7055756036117315`*^9, 
+   3.7055756110013742`*^9}},ExpressionUUID->"1e339142-fe40-456d-9e3a-\
+c9c169833036"]
+}, Open  ]],
+
+Cell["Compare with", "Text",
+ CellChangeTimes->{{3.705575562381096*^9, 
+  3.7055755652507267`*^9}},ExpressionUUID->"b51b7632-2038-4ec7-88ca-\
+9e868b5f7468"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Assuming", "[", 
+  RowBox[{
+   RowBox[{"d", ">", "0"}], ",", 
+   RowBox[{
+    FractionBox["1", "2"], "*", 
+    RowBox[{"FourierSinTransform", "[", 
+     RowBox[{"1", ",", "r", ",", "k", ",", 
+      RowBox[{"FourierParameters", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1"}], "}"}]}]}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7018705963473415`*^9, 3.701870603425314*^9}, {
+   3.7018706702827654`*^9, 3.7018706710953293`*^9}, {3.701870887817824*^9, 
+   3.7018708900968094`*^9}, {3.7018714484181004`*^9, 3.701871448611673*^9}, {
+   3.7018715921753616`*^9, 3.7018715988304977`*^9}, 
+   3.7018727676429005`*^9},ExpressionUUID->"1f44190b-c8be-4595-8f77-\
+25f7064edc7b"],
+
+Cell[BoxData[
+ FractionBox["1", "k"]], "Output",
+ CellChangeTimes->{
+  3.7018716007212954`*^9, 3.7018727683928595`*^9, {3.70557560361874*^9, 
+   3.705575611009396*^9}},ExpressionUUID->"d8f2e51a-c9ee-4b72-9175-\
+2ec99c19f7da"]
+}, Open  ]]
+},
+WindowSize->{804, 988},
+WindowMargins->{{25, Automatic}, {Automatic, 31}},
+FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (April 18, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 355, 10, 51, "Input", "ExpressionUUID" -> \
+"dd664794-2eea-47b4-8044-3afcd76a8de7"],
+Cell[916, 32, 246, 6, 30, "Text", "ExpressionUUID" -> \
+"b1ba0dc2-26f0-469d-b384-f5027b7662ae"],
+Cell[CellGroupData[{
+Cell[1187, 42, 743, 17, 53, "Input", "ExpressionUUID" -> \
+"87810691-6518-4545-b1b2-74931cfaf546"],
+Cell[1933, 61, 428, 11, 56, "Output", "ExpressionUUID" -> \
+"1e339142-fe40-456d-9e3a-c9c169833036"]
+}, Open  ]],
+Cell[2376, 75, 156, 3, 30, "Text", "ExpressionUUID" -> \
+"b51b7632-2038-4ec7-88ca-9e868b5f7468"],
+Cell[CellGroupData[{
+Cell[2557, 82, 716, 16, 53, "Input", "ExpressionUUID" -> \
+"1f44190b-c8be-4595-8f77-25f7064edc7b"],
+Cell[3276, 100, 225, 5, 53, "Output", "ExpressionUUID" -> \
+"d8f2e51a-c9ee-4b72-9175-2ec99c19f7da"]
+}, Open  ]]
+}
+]
+*)
+
